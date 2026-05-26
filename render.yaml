@@ -1,0 +1,31 @@
+services:
+  - type: web
+    name: suer-api
+    runtime: python
+    repo: https://github.com/Abdoncs/SUER-01   # substitua
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.api:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: suer-db
+          property: connectionString
+
+  - type: web
+    name: suer-dashboard
+    runtime: python
+    repo: https://github.com/SEU_USUARIO/suer-simulator
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run app/dashboard.py --server.port $PORT --server.address 0.0.0.0
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: suer-db
+          property: connectionString
+
+  - type: postgresql
+    name: suer-db
+    plan: free
+    ipAllowList: []
