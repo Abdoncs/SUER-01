@@ -6,4 +6,4 @@ Simulador acadêmico de prosumidores de energia com liquidação financeira, API
 
 1. Crie um ambiente virtual e instale as dependências:
    ```bash
-   pip install -r requirements.txt
+   pip install -r requirements.txt# SUER-01
