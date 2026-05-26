@@ -7,7 +7,8 @@ import streamlit as st
 import pandas as pd
 from sqlalchemy import create_engine
 import os
-from app.database import init_db
+#from app.database import init_db
+from .database import init_db
 
 # Garante que a tabela exista antes de consultar
 init_db()
