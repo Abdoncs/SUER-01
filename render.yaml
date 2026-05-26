@@ -15,7 +15,7 @@ services:
   - type: web
     name: suer-dashboard
     runtime: python
-    repo: https://github.com/Abdoncs/SUER-01/tree/main/simulator
+    repo: https://github.com/Abdoncs/SUER-01
     plan: free
     buildCommand: pip install -r requirements.txt
     startCommand: streamlit run app/dashboard.py --server.port $PORT --server.address 0.0.0.0
