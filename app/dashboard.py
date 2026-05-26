@@ -4,10 +4,10 @@ from sqlalchemy import create_engine, text
 import os
 
 # Importa a função de inicialização do banco (cria a tabela se necessário)
-from app.database import init_db
+#from app.database import init_db
 
 # Inicializa o banco (cria a tabela se não existir)
-init_db()
+#init_db()
 
 # Obtém a URL do banco (mesma lógica do database.py)
 DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///suer.db")
