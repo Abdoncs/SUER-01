@@ -3,9 +3,12 @@ import random
 import time
 from datetime import datetime
 
-API_URL = "http://localhost:8000/energia"   # Altere para a URL da API quando publicar
+# ⚠️ ALTERE ESTA URL PARA A URL DA SUA API APÓS O DEPLOY NO RENDER
+API_URL = "http://localhost:8000/energia"   # ou "https://suer-api.onrender.com/energia"
 
 usuarios = [f"USR-{i:02d}" for i in range(1, 11)]
+
+print(f"Simulador iniciado. Enviando para {API_URL}")
 
 while True:
     usuario = random.choice(usuarios)
@@ -16,8 +19,11 @@ while True:
         "timestamp": datetime.utcnow().isoformat()
     }
     try:
-        resp = requests.post(API_URL, json=payload)
-        print(f"Enviado {usuario}: {resp.json()}")
+        resp = requests.post(API_URL, json=payload, timeout=5)
+        if resp.status_code == 200:
+            print(f"✓ {usuario} | Enviado: {payload} | Resposta: {resp.json()}")
+        else:
+            print(f"✗ Erro HTTP {resp.status_code}: {resp.text}")
     except Exception as e:
-        print(f"Erro: {e}")
+        print(f"✗ Falha ao enviar: {e}")
     time.sleep(5)
