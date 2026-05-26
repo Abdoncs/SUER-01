@@ -25,7 +25,7 @@ services:
           name: suer-db
           property: connectionString
 
-  #- type: postgresql
-   # name: suer-db
-   # plan: free
-   # ipAllowList: []
+  - type: postgresql
+    name: suer-db
+    plan: free
+    ipAllowList: []
