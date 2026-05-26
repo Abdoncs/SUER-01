@@ -13,6 +13,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Abdoncs"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Abdoncs/SUER",
+    "accountId": "ca90fd33-81cd-49a4-8039-f84674e3c2c8"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -53,7 +65,7 @@
       <updated>1779762943265</updated>
       <workItem from="1779762946378" duration="116000" />
       <workItem from="1779763116084" duration="19000" />
-      <workItem from="1779763148282" duration="1323000" />
+      <workItem from="1779763148282" duration="1743000" />
     </task>
     <task id="LOCAL-00001" summary="SUER">
       <option name="closed" value="true" />
@@ -71,7 +83,15 @@
       <option name="project" value="LOCAL" />
       <updated>1779764321913</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="SUER">
+      <option name="closed" value="true" />
+      <created>1779764710808</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1779764710808</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
