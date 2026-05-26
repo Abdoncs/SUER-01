@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8883b37f-e8c4-4b9e-a7a2-6d5f4e562fdd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/SUER.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="8883b37f-e8c4-4b9e-a7a2-6d5f4e562fdd" name="Changes" comment="SUER" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,11 +53,43 @@
       <updated>1779762943265</updated>
       <workItem from="1779762946378" duration="116000" />
       <workItem from="1779763116084" duration="19000" />
-      <workItem from="1779763148282" duration="1029000" />
+      <workItem from="1779763148282" duration="1323000" />
     </task>
+    <task id="LOCAL-00001" summary="SUER">
+      <option name="closed" value="true" />
+      <created>1779764250504</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1779764250504</updated>
+    </task>
+    <task id="LOCAL-00002" summary="SUER">
+      <option name="closed" value="true" />
+      <created>1779764321913</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1779764321913</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="SUER" />
+    <option name="LAST_COMMIT_MESSAGE" value="SUER" />
   </component>
 </project>
