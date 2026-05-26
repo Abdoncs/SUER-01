@@ -6,6 +6,17 @@ from app.database import SessionLocal, engine, Base
 from app.models import EnergyRecord
 from app.liquidation import calcular_liquidacao
 
+from fastapi import FastAPI
+from pydantic import BaseModel
+from datetime import datetime
+from sqlalchemy.orm import Session
+from app.database import SessionLocal, engine, init_db
+from app.models import EnergyRecord
+from app.liquidation import calcular_liquidacao
+
+# Cria a tabela se não existir
+init_db()
+
 Base.metadata.create_all(bind=engine)
 
 app = FastAPI(title="SUER Energy API")

@@ -3,6 +3,15 @@ import pandas as pd
 from sqlalchemy import create_engine
 import os
 
+import streamlit as st
+import pandas as pd
+from sqlalchemy import create_engine
+import os
+from app.database import init_db
+
+# Garante que a tabela exista antes de consultar
+init_db()
+
 DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///suer.db")
 if DATABASE_URL.startswith("postgres://"):
     DATABASE_URL = DATABASE_URL.replace("postgres://", "postgresql://", 1)

@@ -2,6 +2,10 @@ import os
 from sqlalchemy import create_engine
 from sqlalchemy.orm import declarative_base, sessionmaker
 
+import os
+from sqlalchemy import create_engine
+from sqlalchemy.orm import declarative_base, sessionmaker
+
 DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///suer.db")
 
 if DATABASE_URL.startswith("postgres://"):
@@ -11,3 +15,8 @@ connect_args = {"check_same_thread": False} if "sqlite" in DATABASE_URL else {}
 engine = create_engine(DATABASE_URL, connect_args=connect_args)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = declarative_base()
+
+def init_db():
+    """Cria todas as tabelas definidas nos modelos."""
+    from app.models import EnergyRecord  # importação local para evitar circular
+    Base.metadata.create_all(bind=engine)
